@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#706E6E"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logintext"
+        android:text="SIGNIN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/processsignin"/>
+
+
+    <LinearLayout
+        android:id="@+id/processsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+     <EditText
+        android:id="@+id/ediText1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textPersonName"
+        android:hint="UserName"
+         android:textColorHint="@color/white"
+        android:drawablePadding="16dp"
+        android:background="@drawable/editbackground"
+        android:drawableStart="@drawable/ic_person"
+        android:maxLength="20"
+        android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:textColorHint="@color/white"
+            android:background="@drawable/editbackground"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:maxLength="8"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            app:backgroundTint="#F4C433"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--&lt;!&ndash;
+
+</androidx.constraintlayout.widget.ConstraintLayout>-->
