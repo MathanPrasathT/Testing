@@ -6,21 +6,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logintext"
-        android:text="SIGNIN"
+        android:id="@+id/spotronicsButton"
+        android:text="Spotronics"
         android:textStyle="bold"
         android:textSize="20dp"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        app:backgroundTint="#F4C433"
         android:layout_marginBottom="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/processsignin"/>
+        app:layout_constraintBottom_toTopOf="@id/processSignin"/>
 
 
     <LinearLayout
-        android:id="@+id/processsignin"
+        android:id="@+id/processSignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -28,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
      <EditText
-        android:id="@+id/ediText1"
+        android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -59,18 +62,28 @@
             android:textSize="20sp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/submitbutton"
+            android:id="@+id/signinButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Submit"
+            android:text="Signin"
             app:backgroundTint="#F4C433"
             android:textColor="@color/white"
+            android:textStyle="bold"
             android:textSize="20sp"
+            android:layout_marginTop="20dp"
             app:cornerRadius="12dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayTextView"
+        app:layout_constraintTop_toBottomOf="@id/processSignin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

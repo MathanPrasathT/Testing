@@ -27,7 +27,7 @@
 
     <TextView
 
-        android:id="@+id/textview1"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please"
@@ -43,9 +43,10 @@
             android:layout_height="wrap_content"
             android:text="signin"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textview1"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
             app:layout_constraintEnd_toStartOf="@id/button2"
             android:layout_marginTop="30dp"
+            android:textStyle="bold"
             app:backgroundTint="#F4C433"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -57,9 +58,10 @@
             android:layout_height="wrap_content"
             android:text="Signup"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textview1"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
             app:layout_constraintStart_toEndOf="@id/button1"
             android:layout_marginTop="30dp"
+            android:textStyle="bold"
             app:backgroundTint="#F4C433"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -71,7 +73,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/containerview"/>
+        android:id="@+id/containerView"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
